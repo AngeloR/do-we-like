@@ -3,6 +3,9 @@ dowelike = false
 why = [
     "Don't you remember the micro transaction fiasco of Star Wars Battlefront?!"
 ]
+references = [
+    "https://www.reddit.com/r/StarWarsBattlefront/comments/7cff0b/seriously_i_paid_80_to_have_vader_locked/"
+]
 [battlefront]
 see = "ea"
 ["star wars battlefront 2"]
@@ -13,6 +16,9 @@ see = "ea"
 dowelike = false
 why = [
     "They are shitty towards female employees"
+]
+references = [
+    "https://www.geekwire.com/2018/game-developer-arenanet-fires-two-employees-following-twitter-exchange-spurring-controversy/"
 ]
 
 [guildwars]
@@ -26,3 +32,6 @@ dowelike = true
 why = [
     "They seem super cool and they make awesome games (Witcher)"
 ]
+
+["cd projekt red"]
+see = "cdprojektred"
