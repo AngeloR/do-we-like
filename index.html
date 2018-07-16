@@ -56,7 +56,7 @@
             else {
                 const data = JSON.parse(req.target.response);
 
-                $el.innerHTML = data.dowelike ? 'Yep!' : 'Oh god no!';
+                $el.innerHTML = data.dowelike ? 'Yep!' : 'Not today we don\'t!';
                 $reasons.innerHTML = data.why.map(reason => {
                     return `<li>${reason}</li>`;
                 });
