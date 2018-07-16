@@ -20,10 +20,8 @@ why = [
 references = [
     "https://www.geekwire.com/2018/game-developer-arenanet-fires-two-employees-following-twitter-exchange-spurring-controversy/"
 ]
-
 [guildwars]
 see = "arenanet"
-
 [guildwars2]
 see = "arenanet"
 
@@ -32,6 +30,20 @@ dowelike = true
 why = [
     "They seem super cool and they make awesome games (Witcher)"
 ]
-
 ["cd projekt red"]
 see = "cdprojektred"
+
+["kylie jenner"]
+dowelike = true
+why = [
+    "I'm not really sure actually..."
+]
+
+["elon musk"]
+dowelike = false
+why = [
+    "Turns out he thinks the only reason people go to Thailand is because they're pedos"
+]
+references = [
+    "https://www.washingtonpost.com/news/worldviews/wp/2018/07/15/elon-musk-insisting-he-helped-in-thai-cave-rescue-calls-actual-rescuer-a-pedo/?noredirect=on&utm_term=.0c8c3675709b"
+]
