@@ -36,6 +36,7 @@
             <div id="output">
                 <h1 id="dowelike"></h1>
                 <ul id="reasons"></ul>
+                <div id="references"></div>
             </div>
         </div>
     </body>
@@ -46,9 +47,11 @@
         function responseHandler(req) {
             const $el = $('#dowelike');
             const $reasons = $('#reasons');
+            const $references = $('#references');
             if(req.target.status === 404) {
                 $el.innerHTML = 'Hmm.. I\'m not sure';
                 $reasons.innerHTML = '';
+                $references.innerHTML = '';
             }
             else {
                 const data = JSON.parse(req.target.response);
@@ -57,6 +60,9 @@
                 $reasons.innerHTML = data.why.map(reason => {
                     return `<li>${reason}</li>`;
                 });
+                $references.innerHTML = '<h1>References</h1><ul>' + data.references.map(reference => {
+                    return `<li><a href="${reference}">${reference}</a></li>`;
+                }) + '</ul>';
             }
         }
         const $form = $('#do-we-like-form');
