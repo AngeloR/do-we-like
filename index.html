@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Do We Like.... | Harness the Hivemind!</title>
+        <style>
+            body {
+                background-color: #eee;
+                font-family: sans-serif;
+                font-size: 16px;
+            }
+            h1 {
+                color: #282828;
+                font-size: 22pt;
+            }
+            input {
+                border: solid 1px #555;
+                border-radius: 8px;
+                font-size: 16pt;
+                line-height: 22pt;
+                padding: 5px 10px;
+            }
+            #main {
+                width: 800px;
+                margin: 0 auto;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <form id="do-we-like-form">
+                <input type="text" id="thing" placeholder="EA" />
+                <button type="submit">Harness the Hivemind</button>
+            </form>
+            <div id="output">
+                <h1 id="dowelike"></h1>
+                <ul id="reasons"></ul>
+            </div>
+        </div>
+    </body>
+    <script>
+        function $(selector) {
+            return document.querySelector(selector);
+        }
+        function responseHandler(req) {
+            const $el = $('#dowelike');
+            const $reasons = $('#reasons');
+            if(req.target.status === 404) {
+                $el.innerHTML = 'Hmm.. I\'m not sure';
+                $reasons.innerHTML = '';
+            }
+            else {
+                const data = JSON.parse(req.target.response);
+
+                $el.innerHTML = data.dowelike ? 'Yep!' : 'Oh god no!';
+                $reasons.innerHTML = data.why.map(reason => {
+                    return `<li>${reason}</li>`;
+                });
+            }
+        }
+        const $form = $('#do-we-like-form');
+        $form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+
+            const $company = $('#thing').value;
+            const req = new XMLHttpRequest();
+            req.addEventListener("load", responseHandler);
+            req.open('GET', `/${$company}`);
+            req.send();
+
+            return false;
+        });
+    </script>
+</html>

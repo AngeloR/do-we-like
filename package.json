@@ -1,0 +1,16 @@
+{
+    "name": "do-we-like",
+    "description": "Harness the hivemind to make your decisions",
+    "private": true,
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "npx nodemon -e js,toml,html main.js",
+        "start": "node main.js"
+    },
+    "dependencies": {
+        "toml": "^2.3.3"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.2"
+    }
+}

@@ -1,0 +1,28 @@
+[ea]
+dowelike = false
+why = [
+    "Don't you remember the micro transaction fiasco of Star Wars Battlefront?!"
+]
+[battlefront]
+see = "ea"
+["star wars battlefront 2"]
+see = "ea"
+["starwars battlefront 2"]
+
+[arenanet]
+dowelike = false
+why = [
+    "They are shitty towards female employees"
+]
+
+[guildwars]
+see = "arenanet"
+
+[guildwars2]
+see = "arenanet"
+
+[cdprojektred]
+dowelike = true
+why = [
+    "They seem super cool and they make awesome games (Witcher)"
+]
