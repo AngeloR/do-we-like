@@ -54,7 +54,8 @@ why = [
     "Prime day took down their site - it's not like these people invented AWS or anything"
 ]
 references = [
-    "https://www.reddit.com/r/amazonprime/comments/8zdvi9/amazon_prime_day_flop_part_3/"
+    "https://www.reddit.com/r/amazonprime/comments/8zdvi9/amazon_prime_day_flop_part_3/",
+    "https://www.theverge.com/2018/7/16/17577654/amazon-prime-day-website-down-deals-service-disruption"
 ]
 
 ["papa johns"]
@@ -70,4 +71,7 @@ references = [
 dowelike = false
 why = [
     "Really? You're looking for a reason?"
+]
+references = [
+    "https://www.cbsnews.com/news/trump-fist-bumped-turkish-leader-erdogan-said-he-does-things-the-right-way/"
 ]
