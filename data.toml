@@ -51,5 +51,8 @@ references = [
 ["amazon"]
 dowelike = false
 why = [
-    "The Prime day sales just aren't good enough"
+    "Prime day took down their site - it's not like these people invented AWS or anything"
+]
+references = [
+    "https://www.reddit.com/r/amazonprime/comments/8zdvi9/amazon_prime_day_flop_part_3/"
 ]
