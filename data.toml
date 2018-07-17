@@ -36,7 +36,7 @@ see = "cdprojektred"
 ["kylie jenner"]
 dowelike = true
 why = [
-    "I'm not really sure actually..."
+    "She only has 900 million dollars"
 ]
 
 ["elon musk"]
@@ -46,4 +46,10 @@ why = [
 ]
 references = [
     "https://www.washingtonpost.com/news/worldviews/wp/2018/07/15/elon-musk-insisting-he-helped-in-thai-cave-rescue-calls-actual-rescuer-a-pedo/?noredirect=on&utm_term=.0c8c3675709b"
+]
+
+["amazon"]
+dowelike = false
+why = [
+    "The Prime day sales just aren't good enough"
 ]
