@@ -48,10 +48,12 @@
             const $el = $('#dowelike');
             const $reasons = $('#reasons');
             const $references = $('#references');
+
+            $reasons.innerHTML = '';
+            $references.innerHTML = '';
+
             if(req.target.status === 404) {
                 $el.innerHTML = 'Hmm.. I\'m not sure';
-                $reasons.innerHTML = '';
-                $references.innerHTML = '';
             }
             else {
                 const data = JSON.parse(req.target.response);
