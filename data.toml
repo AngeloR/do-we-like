@@ -36,7 +36,7 @@ see = "cdprojektred"
 ["kylie jenner"]
 dowelike = true
 why = [
-    "She only has 900 million dollars"
+    "She only has 900 million dollars.. so I guess that's good?"
 ]
 
 ["elon musk"]
@@ -69,5 +69,5 @@ references = [
 ["donald trump"]
 dowelike = false
 why = [
-    "Really?"
+    "Really? You're looking for a reason?"
 ]
