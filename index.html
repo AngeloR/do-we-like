@@ -24,13 +24,57 @@
                 width: 800px;
                 margin: 0 auto;
                 text-align: center;
+                background-color: #fff;
+                border: solid 1px #909090;
+                box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+                border-radius: 5px;
+                box-sizing: border-box;
+                padding: 25px 10px;
+            }
+            #reasons {
+                padding: 0;
+            }
+            #reasons li {
+                list-style: none;
+            }
+            #references {
+                width: 700px;
+                margin: 0 auto;
+            }
+            #references a {
+                color: #3091f0;
+            }
+            button {
+                cursor: pointer;
+                box-shadow: inset 0px 1px 0px 0px #cae3fc;
+                background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #4197ee) );
+                background-color: #79bbff;
+                border-radius: 6px;
+                border: 1px solid #469df5;
+                display:inline-block;
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: bold;
+                height: 50px;
+                line-height: 50px;
+                text-shadow: 1px 1px 0px #287ace;
+                padding: 0 25px;
+                margin-bottom: 15px;
+            }
+            button:hover {
+                background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
+                background-color: #4197ee;
+            }
+            button:active {
+                position:relative;
+                top:1px;
             }
         </style>
     </head>
     <body>
         <div id="main">
             <form id="do-we-like-form">
-                <input type="text" id="thing" placeholder="EA" />
+                <h1>Do we like <input type="text" id ="thing" placeholder="EA"/> ?</h1>
                 <button type="submit">Harness the Hivemind</button>
             </form>
             <div id="output">
@@ -73,6 +117,8 @@
             e.stopPropagation();
 
             const $company = $('#thing').value;
+            if($company.length < 1)
+                return;
             const req = new XMLHttpRequest();
             req.addEventListener("load", responseHandler);
             req.open('GET', `/${$company}`);
