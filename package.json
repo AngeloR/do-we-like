@@ -5,12 +5,15 @@
     "version": "0.0.1",
     "scripts": {
         "dev": "npx nodemon -e js,toml,html main.js",
-        "start": "node main.js"
+        "start": "node main.js",
+        "test": "node test-toml.js",
+        "precommit": "npm run test"
     },
     "dependencies": {
         "toml": "^2.3.3"
     },
     "devDependencies": {
+        "husky": "^0.14.3",
         "nodemon": "^1.18.2"
     }
 }
