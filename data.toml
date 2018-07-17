@@ -56,3 +56,18 @@ why = [
 references = [
     "https://www.reddit.com/r/amazonprime/comments/8zdvi9/amazon_prime_day_flop_part_3/"
 ]
+
+["papa johns"]
+dowelike = false
+why = [
+    "Turns out he's racist. Who knew."
+]
+references = [
+    "https://www.forbes.com/sites/noahkirsch/2018/07/11/papa-johns-founder-john-schnatter-allegedly-used-n-word-on-conference-call/#6b61f03b4cfc"
+]
+
+["donald trump"]
+dowelike = false
+why = [
+    "Really?"
+]
