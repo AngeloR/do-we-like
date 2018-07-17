@@ -22,7 +22,7 @@
             }
             #main {
                 width: 800px;
-                margin: 0 auto;
+                margin: 100px auto 0;
                 text-align: center;
                 background-color: #fff;
                 border: solid 1px #909090;
@@ -74,7 +74,7 @@
     <body>
         <div id="main">
             <form id="do-we-like-form">
-                <h1>Do we like <input type="text" id ="thing" placeholder="EA"/> ?</h1>
+                <h1>Do we like <input type="text" id ="thing" placeholder="EA" autocomplete="off" /> ?</h1>
                 <button type="submit">Harness the Hivemind</button>
             </form>
             <div id="output">
@@ -87,6 +87,11 @@
     <script>
         function $(selector) {
             return document.querySelector(selector);
+        }
+        function random(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
         }
         function responseHandler(req) {
             const $el = $('#dowelike');
@@ -126,5 +131,10 @@
 
             return false;
         });
+
+        const hints = [
+            'EA', 'Kylie Jenner', 'CD Projekt Red'
+        ];
+        $('#thing').setAttribute('placeholder', hints[random(0, hints.length)]);
     </script>
 </html>
